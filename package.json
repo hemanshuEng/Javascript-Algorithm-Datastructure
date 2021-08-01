@@ -1,0 +1,18 @@
+{
+  "name": "javascript-data-structure",
+  "version": "1.0.0",
+  "description": "javascript practice ",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest"
+  },
+  "author": "Hemanshu",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6"
+  }
+}
