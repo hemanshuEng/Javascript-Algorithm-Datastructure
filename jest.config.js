@@ -29,10 +29,7 @@ module.exports = {
   // @see: https://jestjs.io/docs/en/configuration#coveragethreshold-object
   coverageThreshold: {
     global: {
-      statements: 100,
-      branches: 95,
       functions: 100,
-      lines: 100,
     },
   },
 };
