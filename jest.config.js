@@ -27,10 +27,5 @@ module.exports = {
   testURL: 'http://localhost/',
 
   // @see: https://jestjs.io/docs/en/configuration#coveragethreshold-object
-  coverageThreshold: {
-    global: {
-      functions: 100,
-    },
-  },
 };
 
