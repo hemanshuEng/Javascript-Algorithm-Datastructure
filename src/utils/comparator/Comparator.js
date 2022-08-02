@@ -35,5 +35,40 @@ export default class Comparator{
     lessThan(a, b){
         return this.compare < 0;
     }
-    
+
+    /**
+     * Checks if variable "a" is greter than "b"
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    greaterThan(a, b) {
+        return this.compare > 0;
+    }
+
+    /**
+     * Checks if variable "a" is less than or equal to "b"
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    lessThanOrEqual(a, b) {
+        return this.lessThan(a, b) || this.equal(a, b);
+    }
+
+    /**
+     * Checks if variable "a" is greater than or equal to "b"
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    greaterThanOrEqual(a, b) {
+        return this.greaterThan(a, b) || this.equal(a, b);
+    }
+
+    reverse(){
+        const compareOriginal = this.compare
+        this.compare= (a, b) => compareOriginal(b, a)
+    }
+
 }
