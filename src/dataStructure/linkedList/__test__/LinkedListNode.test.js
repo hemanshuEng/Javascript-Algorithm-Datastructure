@@ -1,6 +1,6 @@
 import LinkedListNode from "../LinkedListNode";
 
-describe('Algorithms',()=>{
+describe('DataStructure',()=>{
     describe('LinkedListNode',()=>{
         it('should be create linked list with value',()=>{
             const node = new LinkedListNode(1);
